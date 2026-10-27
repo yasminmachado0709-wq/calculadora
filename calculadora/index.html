@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CALCULADORA</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>CALCULADORA</h1>
+        <div id="conteudo_calculadora">
+            <div id="conteudo_visor">
+                <input type="text" id="visor">
+            </div>      
+            <div id="conteudo_numeros">
+                <button onclick="adicionarValorVisor(0);">0</button>
+                <button onclick="adicionarValorVisor(1);">1</button>
+                <button onclick="adicionarValorVisor(2);">2</button>
+                <button onclick="adicionarValorVisor(3);">3</button>
+                <button onclick="adicionarValorVisor(4);">4</button>
+                <button onclick="adicionarValorVisor(5);">5</button>
+                <button onclick="adicionarValorVisor(6);">6</button> 
+                <button onclick="adicionarValorVisor(7);">7</button>
+                <button onclick="adicionarValorVisor(8);">8</button>
+                <button onclick="adicionarValorVisor(9);">9</button>
+                <button onclick="adicionarValorVisor('.');">.</button>
+            </div>  
+            <div id="conteudo_operacoes">
+                <button onclick="adicionarValorVisor('+');">+</button>
+                <button onclick="adicionarValorVisor('-');">-</button>
+                <button onclick="adicionarValorVisor('*');">*</button>
+                <button onclick="adicionarValorVisor('/');">/</button>
+            </div>
+            <div id="conteudo_acoes">
+                <button onclick="calcular();">=</button>
+                <button onclick="limparValorVisor();">Limpar</button>
+            </div>
+            <div id="conteudo_logs"></div>
+        </div>
+        <script src="calculadora.js"></script>
+    </body>
+</html> 
